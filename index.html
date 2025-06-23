@@ -187,6 +187,32 @@
 		justify-content: center;
 	}
 
+	.option-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .option-title {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .option-link {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .option-link:hover {
+            background-color: #218838;
+        }
 
         /* Dark mode toggle button */
         #dark-mode-toggle {
@@ -410,17 +436,12 @@ So beneath  our daily turmoil there lies something deeper, something connecting 
         <!-- Contact section with multiple images -->
         <section id="contact">
             <h2>Contact</h2>
-            <div class="flex-container">
-                <div class="flex-item card">
-                    <img src="/api/placeholder/300/200" alt="Placeholder Image 1" class="responsive-image">
-                    <p>Caption for Image 1</p>
-                </div>
-                <div class="flex-item card">
-                   <img src="/api/placeholder/300/200" alt="Placeholder Image 2" class="responsive-image">
-                    <p>Caption for Image 2</p>
-                </div> 
+            <div class="option-card">
+                <h4 class="option-title">Direct Email</h4>
+                <p>Click to send me an email directly</p>
+                <a href="mailto:nicholas.golledge@vuw.ac.nz?subject=Contact from Website&body=Hi there, I wanted to get in touch..." class="option-link">Email Me</a>
             </div>
-        </section>
+	</section>
 
 
 
