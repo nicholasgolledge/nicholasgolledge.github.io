@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK - www.nicholasgolledge.com</title>
+    <style>
+        /* CSS Variables for easy color scheme management */
+        :root {
+            --primary-color: #000000;             /* #3498db;       /* bright blue */
+            --secondary-color: #d45500ff;        /* orange     */ /* #55708a;  grey blue */
+            --text-color: #55708a;              /* grey blue */
+            --background-color: ##FFFFFF;       /* white */
+        }
+
+        /* Base styles */
+        body {
+            font-family: 'Playfair Display'; /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 2.0s ease; /* For smooth transition when toggling dark mode */
+        }
+
+        /* Container for content alignment */
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: var(--background-color);
+            color: white; 
+            padding: 1rem 0;
+	    transition: color 2.0s ease;
+            /* box-shadow: 0 2px 5px rgba(0,0,0,0.1);  */
+        }
+
+        /* Navigation styles using flexbox */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 50px;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 2.0s ease;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Main content area */
+        main {
+            padding: 2rem 0;
+        }
+
+        /* Heading styles */
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+
+        /* Card style for content blocks */
+        .card {
+            background: white;
+            border-radius: 0px;
+            /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+            padding: 0px;
+	    max-width: 1300px;
+            margin-bottom: 0px;
+            transition: transform 2.0s ease;
+        }
+
+
+	.card2 {
+            background: white;
+            border-radius: 0px;
+            /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+            padding: 0px;
+            max-width: 1300px;
+            margin-bottom: 0px;
+            transition: transform 2.0s ease;
+        }
+
+        .card:hover {
+            transform: translateX(-2.5px);
+        }
+
+        .card2:hover {
+	    transform: translateX(0px);
+        }
+
+	/* Footer styles */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            --text-color: #55708a;
+	    --secondary-color: #FFFFFF;
+            --background-color: #000000;
+        }
+
+        body.dark-mode .card {
+            background: #000000;
+            color: #55708a;
+        }
+	
+        nav a.dark-mode {
+            --text-color: #55708a;
+            --secondary-color: #FFFFFF;
+            --background-color: #000000;
+        }
+
+
+        /* Styles for multiple blocks in a line */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            flex-basis: calc(50% - 10px);
+            margin-bottom: 20px;
+        }
+
+        .flex-item2 {
+            flex-basis: calc(33% - 10px);
+            margin-bottom: 20px;
+        }
+
+
+        /* Responsive image styles */
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+	.half-width-image {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+	.full-width-image {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.flex-center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+        /* Dark mode toggle button */
+        #dark-mode-toggle {
+            background-color: #55708a /* var(--secondary-color); */
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Main content area -->
+    <main class="container">
+        <!-- Home section -->
+        <section id="home">
+		<!-- <h2 class="text-center"> <span style="font-size: 5em;">FEEDBACK</span><br>Uncovering the Hidden Connections between Life and the Universe</h2> -->
+            <div class="flex-item card2">
+		<img src="banner_combined.png" alt="Placeholder Image 2" class="full-width-image">
+		<!--  <h2 class="text-center"><span style="font-size: 3em;">FEEDBACK</span><br>Uncovering the Hidden Connections between Life and the Universe</h2>  -->
+            
+	    </div>
+       </section>
+
+
+
+    <!-- Header section with navigation -->
+    <header>
+        <div class="container">
+            <nav>
+		    <!--  <h1>nicholasgolledge.com</h1>  -->
+                <ul>
+			<!--                    <li><a href="#home">Home</a></li>    -->
+			<li><a href="#about"><span style="font-size: 1.2em;">About the book</span></a></li>
+		    <li><a href="#reviews"><span style="font-size: 1.2em;">Reviews</span></a></li>
+		    <li><a href="#chapters"><span style="font-size: 1.2em;">Chapters</span></a></li>
+		    <li><a href="#retailers"><span style="font-size: 1.2em;">Buy the book</span></a></li>
+		    <li><a href="#connect"><span style="font-size: 1.2em;">Connect</span></a></li>
+		    <li><a href="#bio"><span style="font-size: 1.2em;">About the author</span></a></li>
+                    <li><a href="#contact"><span style="font-size: 1.2em;">Contact</span></a></li>
+                </ul>
+                <!-- Dark mode toggle button -->
+                <button id="dark-mode-toggle">Toggle Dark Mode</button>
+            </nav>
+        </div>
+    </header>
+
+
+
+        <section >
+            <!-- <div class="flex-container"> -->
+                <div class="flex-item card2">
+                        <img src="header_image.png" alt="Placeholder Image 2" class="full-width-image">
+                        <!--    <p>This is the first block of text. You can add your content here.</p> -->
+                </div>
+
+            </div> 
+        </section>
+
+
+
+        <!-- About section with multiple text blocks -->
+        <section id="about">
+            <h2><span style="font-size: 2em;">About the book</span></h2>
+	    <!-- <div class="flex-container"> -->
+                <div class="flex-item card">
+			<p class="text-center">Step into a world where chaos meets creativity, where the origins of life and the intricate dance of existence unfold. From the fiery tumult of Earth’s early days to the entangled networks that shape our modern lives, a tapestry of feedbacks weaves its way through time and space, permeating our world, orchestrating cycles of change.<br><br> 
+
+Feedback: Uncovering the Hidden Connections between Life and the Universe invites you into this invisible world and reveals the waves of change that structure our lives. On this captivating journey we witness the birth of complexity and discover how, through countless tiny adjustments, our world experiments with ideas and possibilities, reinventing itself with each revolution to make better use of the forces that drive it.<br><br>
+
+This is a place where avalanches of energy and information reverberate through systems as vast as the universe itself, triggering cycles of growth that build over aeons, only to collapse in a heartbeat. With each new cycle feedbacks drive a creativity that electrifies our world, conceiving and shaping every facet of our culture.<br><br>
+
+<span style="font-size: 2em;">Available now!</span></p> 
+                </div>
+                
+	    </div>
+        </section>
+
+
+
+	<!-- Section for reviews -->
+	<section id="reviews">
+                <h2><span style="font-size: 2em;">Reviews</span></h2>
+
+
+		<div class="flex-container"> 
+
+                   <div class="flex-item2 card">
+			   <p class="text-center">An "epic, poetic retelling of the history of life through a scientific lens. The book’s emphasis on culture—and its ample interdisciplinary references to literature, art, religion, philosophy, and history—make the work stand out from other scientific primers. An accessible, engaging work ... comparable to the metaphysical lure of Carl Sagan’s compelling commentary on the cosmos."</p>
+
+			   <p class="text-center"> <b><i>Kirkus Reviews (Starred Review) </i></b></p>
+		   </div>
+
+                   <div class="flex-item2 card">
+			   <p class="text-center">"With skillful prose that balances scientific rigor with accessible language, the book makes complex concepts engaging and accessible, providing a thought-provoking journey through Earth’s history and our place within it. A remarkable synthesis of scientific inquiry and poetic reflection. Exceptionally smart, meticulously researched, highly readable; A stunner of a book."</p>
+
+			   <p class="text-center"> <b><i>The Prairies Book Review </i></b></p>
+                   </div>
+
+                   <div class="flex-item2 card">
+			   <p class="text-center">"A profound exploration of the intricate ties between life, consciousness, and our environment. Adopting a multidisciplinary approach that spans biology, ecology, psychology, and philosophy, the book challenges conventional notions of intelligence to offer a comprehensive understanding of existence. A must-read for those seeking a deeper understanding of our place in the world. A triumph."</p>
+
+			   <p class="text-center"> <b><i>Bookview Review </i></b></p>
+                   </div>
+
+                   <div class="flex-item2 card">
+                           <p class="text-center">"Climate scientist Nicholas Golledge has written a stunning book ... a beautiful exploration of the concept of feedbacks, which impacts all life on Earth. This book blew me away - the beauty of the writing made the world astonishing all over again."</p>
+
+                           <p class="text-center"> <b><i>Claire Mabey, The Spinoff </i></b></p>
+                   </div>
+
+                   <div class="flex-item2 card">
+			   <p class="text-center">"Feedback left me fizzing with the joy of being alive, poised on the edge of chaos. A journey from deep time to the future, from subatomic particles to dying stars, through storms, societies, and cosmic webs to the origin and nature of human consciousness." </p>
+
+			   <p class="text-center">  <b><i>Prof. Rebecca Priestley, author of “Fifteen Million Years in Antarctica” and “Dispatches from Continent Seven" </i></b></p>
+
+                   </div>
+
+		   <div class="flex-item2 card">
+                           <p class="text-center">"Feedback is a delightful book. It fizzes with ideas ... the text sparkles. By turns scientific, poetic and spiritual, it delights and challenges in equal measure, an eclectic and inspiring vision of the cosmos and our place within it."</p>
+
+                           <p class="text-center"> <b><i>Doug Benn, Professor of Environmental Change, University of St. Andrews, Scotland </i></b></p>
+                   </div>
+
+
+
+
+		</div>
+
+
+        <!-- Chapter section with multiple text blocks -->
+        <section id="chapters">
+		<h2><span style="font-size: 2em;">Chapters</span></h2>
+
+
+	    <div class="flex-container"> 
+
+
+                <div class="flex-item card">
+			<img src="Earth.png" alt="Placeholder Image 2" class="responsive-image">
+			<h3><span style="font-size: 2em;">Earth</span></h3><br>
+			<p>Throughout the four-and-a-half billion years of Earth's existence the same processes and feedbacks have occurred, alternating pulses of rapid change with cycles of episodic catastrophe that together brought us to where we are now. Starting with the formation of our planet and the devastating impact it experienced as it collided with another, this opening chapter introduces the concept of `feedbacks', and how they brought about slow but purposeful changes that transformed the once searingly hot magma oceans of the early Earth to ones composed of liquid water teeming with life. <br> 
+
+Drawing analogies with visions of the 'underworld' from ancient writers, we dive into the infernal conditions of the inner Earth, and explore how phenomena such as earthquakes and volcanic eruptions dictated how the early Earth evolved. Once thought random and unpredictable, these violent processes are revealed through the lens of the latest scientific discoveries as components in a fully-connected global system that dances to a beat spanning hundreds of millions of years. Exhibiting properties of self-organization and scale-free behaviour, these unimaginably destructive forces somehow wrested order from disorder and coordinated changes that triggered cataclysmic events such as 'Snowball Earth' and the birth of a whole series of supercontinents, and over immense periods of time allowed the climate to cool just enough that the surface of the planet became habitable for complex life.</p> 
+                </div>
+                <!-- <div class="flex-item card">
+                    <p>This is the second block of text, appearing next to the first one.</p>
+		</div> -->
+
+                <div class="flex-item card">
+			<img src="Life.png" alt="Placeholder Image 2" class="responsive-image">
+			<h3><span style="font-size: 2em;">Life</span></h3><br>
+			<p>Earth, as far as we know, is unique in possessing intelligent life. But why? Life is built from elements created at temperatures of hundreds of millions of degrees inside exploding stars, jettisoned outward into the universe with no more likelihood of falling to Earth as to any other planet. We orbit our sun in the `habitable zone', a location that allows liquid water to persist at the surface, but the serendipitous emergence of life did not guarantee its persistence. What were the feedbacks that allowed the earliest cellular organisms to develop into complex multicellular life? Evidence exists of repeated mass extinctions, events so devastating that life on Earth was almost completely wiped out. <br> 
+
+But not quite. Gradual recovery allowed for new phases of genetic experimentation that eventually found optimal functioning for the new ecological niches available. Drawing on the latest ecological research 'Life' describes not just the fragility of life but its innate propensity to adapt and survive, opportunistically bursting forth across newly revealed landscapes or quietly clinging to isolated refugia. Whatever their niche, our biotic systems are governed by the same fundamental principles as the physical Earth, exhibiting properties of scale invariance, self-organization, and optimization. Now, as we become increasingly aware of the consequences of human  activity, we are in a unique and critically important position to determine consciously what the future of life on Earth should look like, and what part we, as a species, might play.   </p>
+	        </div>
+
+                <div class="flex-item card">
+			<img src="Climate.png" alt="Placeholder Image 2" class="responsive-image">
+			<h3><span style="font-size: 2em;">Climate</span></h3><br>
+			<p>When Scotsman James Watt made improvements to the first steam engine in the late 18th century, he revolutionised the efficiency with which machines could operate. But the Industrial Revolution that followed irrevocably shifted the trajectory of our economies and increasingly separated us from the natural environment on which we still depend. In the 250 years since those first coal-powered steam engines our climate has seen ever-increasing emissions of CO2 from our accelerating fossil fuel combustion. Despite 25 years of global climate policy negotiations carbon dioxide has continued to increase, with implied future warming that will radically change every aspect of the world we live in. <br> 
+
+How does this future world compare to what has gone before? What risks do we run in letting greenhouse gas emissions increase in such an uncontrolled and frivolous manner, and what can be learned from ancient climates, when natural feedbacks controlled the `carbon cycle'? In this juxtaposition of future climate threats and evidence from the past, we investigate some of the key feedbacks that underpin the global climate system. Building on the latest research we discover why the climate oscillates between stability and instability, and how climate transitions such as those we may soon face are governed not by smooth and gradual change, but by chaotic avalanches of collapse that radically transform the planet.  </p>
+	        </div>
+
+                <div class="flex-item card">
+			<img src="Humans.png" alt="Placeholder Image 2" class="responsive-image">
+			<h3><span style="font-size: 2em;">Humans</span></h3><br>
+			<p>Our species now dominates the world to such an extent that an entirely new geological time period - the Anthropocene - had to be invented. We have developed advanced intellectual, technological, and social capabilities that collectively have made us one of the most successful species ever. Yet our closest cousins, the great apes, have remained much the same as they were  eight million years ago. In this chapter we explore the crucial feedbacks that have enabled Homo sapiens to evolve and adapt to a physically changing world. <br>
+
+			Climate and environmental change drove the earliest expansions of hominid families, by changing the amount  or  types of  food available. Through hunting, control of fire, and eventually through farming, we in turn exerted a feedback on the landscapes and ecosystems around us. Environmental pressures combined with occasional shocks from volcanic eruptions or meteorite impacts pushed groups into new areas where resistance to unfamiliar pathogens selectively preserved certain genetic traits at the expense of others. <br> 
+
+Processes of synchronization allowed self-organization to arise in our nervous and cardiac systems that optimized our physiological functioning, whilst feedbacks operating in mitochondria - the energy centres of our cells - became crucial for our survival. And now, the latest research is showing new and remarkable feedbacks arising from bacteria in our guts, our microbiome, and how they are increasingly linked to ageing, genomic adaptation, natural immunity, and social behaviour.  </p>
+	        </div>
+
+
+                <div class="flex-item card">
+			<img src="Society.png" alt="Placeholder Image 2" class="responsive-image">
+			<h3><span style="font-size: 2em;">Society</span></h3><br>
+			<p>The genes that distinguish us from chimpanzees underlie our propensity for sociability, creativity, and self-awareness - key components of what it means to be human. But physical evolution alone was not what made us who we are. Communication with each other, initially through non-verbal vocalizations, became a feedback that gave increasing social cohesion to our family groups, whilst adaptations such as whistling improved hunting success and survival. As a social animal we innovated  quickly because of collective intelligence, we reduced infant mortality through the skin-to-skin bonding available in a distributed care-giving network, and we cemented interpersonal connections through coordinated physical activity that synchronized both our brain waves and  heart beats. <br> 
+
+In this chapter we delve into the feedback processes that led both to the rise of our modern societies and to the social structures that gave us resilience and  adaptability, and explore why an increasingly large and settled global population began to rely more and more on intellectual, rather than physiological,  advancement. Society reveals how, because of the development of the scientific method that now underpins all aspects of our societies, we're  beginning to discover feedbacks linking traffic noise to speech development, extreme weather to social conflict, and experiences of trauma to our ability to trust. In the Anthropocene, feedbacks are changing who we are, and what it means to be us.  </p>
+	        </div>
+
+                <div class="flex-item card">
+			<img src="Self.png" alt="Placeholder Image 2" class="responsive-image">
+			<h3><span style="font-size: 2em;">Self</span></h3><br>
+			<p>How do external events and internal feedbacks affect us physically and emotionally, and for how long? In Self we explore the factors that underpin our sense of individuality, and the phenomena that condition who we are: our thoughts, behaviours, and life satisfaction. The more we learn about the brain the more we discover that it is  not so much the behaviour of any particular brain region that's important, but the connectivity between them. During complex thought, networks of brain activity self-organize according to fractal relationships operating at the edge of chaos. As these connections repeatedly break down and reform in avalanches of activity, a feedback arises that allows the brain to  achieve a state of maximum efficiency, optimally processing information cascades in distributed and parallel streams. <br> 
+
+Remarkably, many of the long-range connections that underpin our behaviour develop in the first month of our life, and as we grow these behavioural traits are influenced by factors as surprising as the uniqueness of our name, or the balance we achieve between hard work and relaxation. Our sense of self, our ego, can be a determining factor in whether we are depressed or narcissistic, whether we feel connected to nature or prefer inner city landscapes. And these feedbacks run deep, because, through the complex physiology of the vagus nerve and other systems we are now beginning to see just how directly our brain, and our personality, ultimately affect our physical health and chances of survival.   </p>
+	        </div>
+
+                <div class="flex-item card">
+			<img src="Beyond.png" alt="Placeholder Image 2" class="responsive-image">
+			<h3><span style="font-size: 2em;">Beyond</span></h3><br>
+			<p>Who are we? It's  one of the most fundamental questions we can ask, yet answers are frustratingly elusive. Humans learn and adapt their behaviour, but how do we differ from artificial intelligence bots that also learn and adapt? Is our consciousness a 'ghost in the machine', an  entity separate and distinct from the physical substrate from which it somehow arises? Or is it just a  consequence of the physical complexity in our brain structure? Some researchers now think that the evolution of consciousness might actually depend on the interpersonal feedbacks we develop in our social groups. And as we begin to map the neurological overlap between creativity, spirituality, and sexuality, ground-breaking clinical studies now connect feelings of religiosity to the specific brain circuits that also control our perception of pain, fear, altruism and unconditional love. <br> 
+
+In this chapter we discover how, through intellectual endeavour, artistic enterprise, deep introspection or meditation we develop our own individual perception of reality, perhaps searching for a connection to a more fundamental, even divine, energy. And at the cutting edge of cosmology we encounter just such phenomena, cosmic strings of pure energy, intergalactic magnetic filaments and a cosmic web of dark matter spanning the entire observable universe. Now, at the place where cosmology and philosophy intersect, some of the greatest minds of our generation are suggesting something remarkable and deeply profound: that the universe itself is learning.   </p>
+	        </div>
+
+
+                <div class="flex-item card">
+			<img src="Synthesis.png" alt="Placeholder Image 2" class="responsive-image">
+			<h3><span style="font-size: 2em;">Synthesis</span></h3><br>
+			<p>We have become organisms that can observe our own existence, feel emotions, and question the purpose of being here. We rely on prediction to navigate the world around us, and in doing so become embroiled in an ever-changing social contract not just with those around us but with people we've never even met. Through feedbacks imposed upon us we adapt and change, because we have to. But we are not alone. All of the feedbacks described in earlier chapters are feedbacks that trigger directed change, adapting a system  to improve its functioning. Individually, the processes involved are unremarkable, but collectively they represent something far more important - a cognitive system, a system that learns as it operates. And so it emerges that the feedbacks that control our daily lives are feedbacks that also appear in areas as diverse as the structure of the Earth, the evolution of life, and the fabric of the cosmos. <br> 
+
+So beneath  our daily turmoil there lies something deeper, something connecting us to our world that implicitly offers a sense of purpose. We are united through an innate desire to continue to exist and to improve, to learn and evolve through a proliferation of creativity that gives meaning to our lives. As we now design synthetic biosystems and artificial intelligence algorithms, it is time, perhaps, to pause for a moment and ask whether these systems will be governed by the same feedbacks that brought us to where we are now? Or will there be new ones? What, for them, will be the critical feedbacks, and who will it be that gets to decide?  </p>
+	        </div>
+
+
+	    </div> 
+
+        </section>
+
+
+
+
+
+
+        <!-- Contact section with multiple images -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="flex-container">
+                <div class="flex-item card">
+                    <img src="/api/placeholder/300/200" alt="Placeholder Image 1" class="responsive-image">
+                    <p>Caption for Image 1</p>
+                </div>
+                <div class="flex-item card">
+                   <img src="/api/placeholder/300/200" alt="Placeholder Image 2" class="responsive-image">
+                    <p>Caption for Image 2</p>
+                </div> 
+            </div>
+        </section>
+
+
+
+
+       <!-- Author bio section with  text and image blocks -->
+        <section id="bio">
+                <h2><span style="font-size: 2em;">About the author</span></h2>
+
+            <div class="flex-container">
+		<div class="flex-item card">
+
+                        <img src="author_photo_Golledge_sm.jpg" alt="Placeholder Image 2" class="half-width-image">
+                </div>
+
+
+
+                <div class="flex-item card">
+			<p> Professor Nicholas Golledge is an elected Fellow of the Royal Society of New Zealand, and an internationally recognized climate scientist based in Wellington, New Zealand. In his research he uses fieldwork and computer-based techniques to answer fundamental questions about how the Earth works. During his 25 year career he has carried out fieldwork all over the world and has led numerous research expeditions to Antarctica. <br> <br>
+
+			<b>ACHIEVEMENTS</b><br>
+			Nick has published over 100 scientific articles including several in Nature and Science, the top general science journals. His achievements have attracted  awards such as the 2023 Hutton Medal (Royal Society of New Zealand), the 2019 Prime Minister's Science Prize, the 2019 Hill Tinsley Medal (New Zealand Association of Scientists), and the 2017 McKay Hammer Award (Geological Society of New Zealand). From 2018 - 2021 he was a Lead Author for the Sixth Assessment report of the Intergovernmental Panel on Climate Change. <br> <br>
+			
+			<b>PROFILE</b><br>
+Nick's global profile has led to invited presentations at world-leading institutions such as Caltech and MIT, and at high-profile international events such as COP26. He is frequently interviewed for television, radio, and the written media and his work has been covered by international publications such as the New York Times, the Washington Post, and National Geographic. 
+			</p>
+
+
+            </div> 
+	</section>
+
+
+
+
+
+
+
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nicholas R. Golledge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling and dark mode toggle -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Dark mode toggle functionality
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
